@@ -4,7 +4,7 @@ const app = require("./app");
 test("Homepage works", async () => {
   const response = await request(app).get("/");
   expect(response.status).toBe(200);
-  expect(response.body.message).toBe("Welcome to my shop!");
+expect(response.body.message).toBe("CI/CD Pipeline Working! 🚀");
 });
 
 test("Products page works", async () => {
