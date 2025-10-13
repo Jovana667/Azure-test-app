@@ -3,7 +3,7 @@ const app = express();
 
 // Your routes
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my shop!" });
+res.json({ message: "CI/CD Pipeline Working! 🚀" });
 });
 
 app.get("/products", (req, res) => {
@@ -12,9 +12,8 @@ app.get("/products", (req, res) => {
 
 // Only start server if running directly (not during tests)
 if (require.main === module) {
-  app.listen(3000, () => {
-    console.log("Shop is open on http://localhost:3000");
+  app.listen(process.env.PORT || 8080, () => {
+    console.log("Server is running");
   });
 }
-
 module.exports = app;
