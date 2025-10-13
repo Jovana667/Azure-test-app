@@ -12,9 +12,8 @@ app.get("/products", (req, res) => {
 
 // Only start server if running directly (not during tests)
 if (require.main === module) {
-  const PORT = process.env.PORT || 8080;
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  app.listen(process.env.PORT || 8080, () => {
+    console.log("Server is running");
   });
 }
 module.exports = app;
