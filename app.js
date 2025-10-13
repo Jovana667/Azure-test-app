@@ -3,7 +3,7 @@ const app = express();
 
 // Your routes
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my shop!" });
+res.json({ message: "CI/CD Pipeline Working! 🚀" });
 });
 
 app.get("/products", (req, res) => {
