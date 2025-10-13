@@ -1,10 +1,10 @@
 const request = require("supertest");
-const app = require("./app");
+const app = require("./server");
 
 test("Homepage works", async () => {
   const response = await request(app).get("/");
   expect(response.status).toBe(200);
-expect(response.body.message).toBe("CI/CD Pipeline Working! 🚀");
+  expect(response.body.message).toBe("CI/CD Pipeline Working! 🚀");
 });
 
 test("Products page works", async () => {
