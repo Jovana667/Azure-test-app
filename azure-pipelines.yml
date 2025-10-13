@@ -12,10 +12,10 @@ variables:
   azureSubscription: '5f097850-127b-4630-bae7-5ec86fbbcd72'
 
   # Web app name
-  webAppName: ''
+  webAppName: 'jovana-test-app'
 
   # Environment name
-  environmentName: ''
+  environmentName: 'production'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
